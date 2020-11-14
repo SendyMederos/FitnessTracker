@@ -3,7 +3,7 @@ let db = require("../models");
 let path = require("path")
 require('dotenv').config({ silent: true });
 
-mongoose.connect(process.env.ATLAS_URI || "mongodb://localhost/workout", {
+mongoose.connect(process.env.ATLAS_URI, {
     useNewUrlParser: true,
     useFindAndModify: false,
 });
